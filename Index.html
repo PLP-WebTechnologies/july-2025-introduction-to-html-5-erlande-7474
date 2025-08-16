@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple HTML5 web page demonstrating semantic structure, accessibility, and SEO best practices.">
+  <meta name="author" content="Your Name">
+  <title>Learning HTML5: Accessibility & SEO</title>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to My HTML5 Web Page</h1>
+    <p>A beginner-friendly example of accessibility and SEO in action.</p>
+    
+    <!-- Navigation Landmark -->
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Landmark -->
+  <main>
+    <!-- About Section -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About This Page</h2>
+      <p>This page is built using <strong>semantic HTML5</strong> tags, making it accessible to screen readers and optimized for search engines. It shows how to organize content logically without relying on unnecessary elements.</p>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" aria-labelledby="articles-heading">
+      <h2 id="articles-heading">Latest Articles</h2>
+      <article>
+        <header>
+          <h3>Why Semantic HTML Matters</h3>
+          <p><time datetime="2025-08-16">August 16, 2025</time></p>
+        </header>
+        <p>Semantic HTML improves accessibility, SEO, and overall maintainability of web projects. Search engines and assistive technologies rely on proper structure for better user experience.</p>
+      </article>
+
+      <article>
+        <header>
+          <h3>Getting Started with Web Accessibility</h3>
+          <p><time datetime="2025-08-10">August 10, 2025</time></p>
+        </header>
+        <p>Accessibility ensures inclusivity for all users, including those using screen readers or alternative input devices. It’s not just a best practice—it’s a necessity.</p>
+      </article>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <address>
+        <p>Email: <a href="mailto:example@email.com">example@email.com</a></p>
+        <p>Location: Addis Ababa, Ethiopia</p>
+      </address>
+    </section>
+  </main>
+
+  <!-- Footer Landmark -->
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <nav aria-label="Footer Navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
